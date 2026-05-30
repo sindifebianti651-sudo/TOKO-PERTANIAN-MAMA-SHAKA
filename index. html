@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Pertanian Subur Makmur</title>
+    <style>
+        /* Pengaturan Dasar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9fbf9;
+            color: #333;
+        }
+        
+        /* Bagian Header (Menu Navigasi) */
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #c8e6c9;
+        }
+
+        /* Bagian Banner (Hero Section) */
+        .hero {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-top: 0;
+        }
+
+        /* Bagian Konten Utama */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            text-align: center;
+            color: #2e7d32;
+            margin-bottom: 30px;
+            font-size: 28px;
+            border-bottom: 2px solid #4caf50;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        /* Grid Produk */
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Kartu Produk */
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 260px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #eee;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        .kategori-label {
+            font-size: 12px;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .card h3 {
+            font-size: 18px;
+            margin: 10px 0;
+            color: #333;
+        }
+        .card .harga {
+            font-size: 16px;
+            color: #d32f2f;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .btn-beli {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100%;
+            font-weight: bold;
+        }
+        .btn-beli:hover {
+            background-color: #1b5e20;
+        }
+
+        /* Bagian Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌱 Subur Makmur Tani</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#katalog">Katalog Produk</a></li>
+                <li><a href="#">Cara Pesan</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Solusi Lengkap Pertanian Anda</h2>
+        <p>Menyediakan Pestisida, Obat Tanaman, Bibit Unggul, dan Pupuk Berkualitas</p>
+    </div>
+
+    <div class="container" id="katalog">
+        <div style="text-align: center;">
+            <h2 class="section-title">Katalog Produk Kami</h2>
+        </div>
+        
+        <div class="product-grid">
+            
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1592982537447-6f2334860ccf?w=500&q=80" alt="Botol Pestisida">
+                <span class="kategori-label">Pestisida</span>
+                <h3>Insektisida Anti Hama 500ml</h3>
+                <p class="harga">Rp 65.000</p>
+                <button class="btn-beli">Masukkan Keranjang</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1587334208035-7140e6cda71b?w=500&q=80" alt="Obat Tanaman">
+                <span class="kategori-label">Obat Tanaman</span>
+                <h3>Fungisida Anti Jamur Daun</h3>
+                <p class="harga">Rp 45.000</p>
+                <button class="btn-beli">Masukkan Keranjang</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1592732973767-55097bc8fc95?w=500&q=80" alt="Bibit Tanaman">
+                <span class="kategori-label">Bibit</span>
+                <h3>Bibit Cabai Rawit Merah (10g)</h3>
+                <p class="harga">Rp 35.000</p>
+                <button class="btn-beli">Masukkan Keranjang</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1622383563227-04401ab4e5ea?w=500&q=80" alt="Karung Pupuk">
+                <span class="kategori-label">Pupuk</span>
+                <h3>Pupuk NPK Mutiara 1Kg</h3>
+                <p class="harga">Rp 20.000</p>
+                <button class="btn-beli">Masukkan Keranjang</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Toko Pertanian Subur Makmur. Semua Hak Dilindungi.</p>
+        <p>Jl. Tani Sejahtera No. 123, Indonesia | WA: 082179479572>
+    </footer>
+
+</body>
+</html>
